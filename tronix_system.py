@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 """
-Tronix System - Sistema de Saudação para Pizzaria
+Tronix System - Sistema de SaudaÃ§Ã£o para Pizzaria
 """
 
-# Dicionário com 5 sabores de pizza e seus preços
+# DicionÃ¡rio com 5 sabores de pizza e seus preÃ§os
 cardapio = {
     1: {"nome": "Calabresa", "preco": 29.90},
     2: {"nome": "Mussarela", "preco": 27.90},
@@ -15,32 +15,40 @@ cardapio = {
 }
 
 def saudacao():
-    """Exibe uma mensagem de saudação da pizzaria."""
-    print("🍕 Bem-vindo à Tronix Pizzaria! 🍕")
+    """Exibe uma mensagem de saudaÃ§Ã£o da pizzaria."""
+    print("ðŸ• Bem-vindo Ã  Tronix Pizzaria! ðŸ•")
     print("O melhor sabor da cidade, feito com amor e tecnologia.")
-    print("Como podemos ajudar você hoje?")
+    print("Como podemos ajudar vocÃª hoje?")
 
 def exibir_menu():
-    """Exibe o cardápio de forma organizada."""
-    print("\n--- 📋 Cardápio Tronix ---")
+    """Exibe o cardÃ¡pio de forma organizada."""
+    print("\n--- ðŸ“‹ CardÃ¡pio Tronix ---")
     for numero, info in cardapio.items():
         print(f"{numero}. {info['nome']} - R$ {info['preco']:.2f}")
     print("------------------------\n")
 
 def escolher_pizza():
-    """Permite ao usuário escolher uma pizza pelo número."""
+    """Permite ao usuÃ¡rio escolher uma pizza pelo nÃºmero."""
     exibir_menu()
     try:
-        escolha = int(input("Digite o número da pizza desejada: "))
+        escolha = int(input("Digite o nÃºmero da pizza desejada: "))
         if escolha in cardapio:
             pizza_escolhida = cardapio[escolha]
-            print(f"\n✅ Você escolheu: {pizza_escolhida['nome']}")
-            print(f"💰 Preço: R$ {pizza_escolhida['preco']:.2f}")
+            print(f"\nâœ… VocÃª escolheu: {pizza_escolhida['nome']}")
+            print(f"ðŸ’° PreÃ§o: R$ {pizza_escolhida['preco']:.2f}")
         else:
-            print("❌ Opção inválida! Por favor, escolha um número de 1 a 5.")
+            print("âŒ OpÃ§Ã£o invÃ¡lida! Por favor, escolha um nÃºmero de 1 a 5.")
     except ValueError:
-        print("❌ Entrada inválida! Digite apenas números.")
+        print("âŒ Entrada invÃ¡lida! Digite apenas nÃºmeros.")
 
 if __name__ == "__main__":
     saudacao()
     escolher_pizza()
+#!/usr/bin/env python3 
+# -*- coding: utf-8 -*- 
+ 
+def saudacao(): 
+    print("?? Bem-vindo … Tronix Pizzaria! ??") 
+ 
+if __name__ == "__main__": 
+    saudacao() 
